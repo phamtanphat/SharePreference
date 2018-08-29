@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:textAllCaps="true"
+        android:textColor="#f20"
+        android:textSize="35sp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/textviewtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dang nhap he thong" />
+
+    <EditText
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:hint="Nhap tai khoan"
+        android:layout_marginTop="40dp"
+        android:layout_below="@id/textviewtitle"
+        android:id="@+id/edittextTaikhoan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:hint="Nhap mat khau"
+        android:layout_marginTop="40dp"
+        android:layout_below="@id/edittextTaikhoan"
+        android:id="@+id/edittextMatkhau"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <CheckBox
+        android:text="Luu mat khau"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@id/edittextMatkhau"
+        android:id="@+id/checkboxSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Button
+        android:text="Dang nhap"
+        android:layout_marginTop="80dp"
+        android:layout_below="@id/checkboxSave"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/buttonDangnhap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>
